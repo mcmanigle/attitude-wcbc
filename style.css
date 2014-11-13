@@ -1,0 +1,452 @@
+/*
+Theme Name: Attitude-WCBC
+Theme URI: http://www.wolfsonrowing.org
+Author: John McManigle
+Author URI: http://www.wolfsonrowing.org
+Description: This extention for Attitude exists for WCBC-specific things. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: attitude
+*/
+
+@import url("attitude-style-mod.css");
+
+.entry-content {
+  overflow: visible;
+}
+
+.mcl_message {
+  background: #ccffcc;
+  padding: 10px;
+  border: solid 1px #00aa00;
+  margin-bottom: 10px;
+}
+
+.mcl_error {
+  background: #ffcccc;
+  padding: 10px;
+  border: solid 1px #aa0000;
+  margin-bottom: 10px;
+}
+
+.mcl_wait {
+  background: #ffffcc;
+  padding: 10px;
+  border: solid 1px #aaaa00;
+  margin-bottom: 10px;
+}
+
+div#mcl_message_area_container {
+  position: relative;
+  height: 0px;
+}
+
+div#mcl_message_area {
+  position: absolute;
+  right: 0px;
+  left: 200px;
+  top: -50px;
+  height: 50px;
+}
+
+.mcl_selectbox {
+  width: 275px;
+  padding: 0 40px 30px 0;
+  display: inline-block;
+}
+
+.mcl_selectbox select {
+  width: 75% !important;
+  float: left;
+}
+
+.mcl_selectbox input {
+  width: 20%;
+  padding: 0;
+  margin: 0 0 0 5%;
+  display: block;
+  float: left;
+}
+
+textarea#mcl_addresses_area {
+  height: 200px;
+  margin: 0;
+}
+
+textarea.mcl_textarea {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div#mcl_addresses_error_area {
+  color: #dd0000;
+  margin-bottom: 25px;
+}
+
+input#mcl_delete_button {
+  border: 1px solid #AF0000;
+  background: #AF3333;
+  float: right;
+}
+
+.constitution p {
+  margin: 0;
+}
+
+.constitution strong {
+  font-weight: normal;
+}
+
+.const-sechead {
+  font-weight: bold;
+  color: #333;
+  border-top: solid 2px #333;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding-top: 12px;
+}
+
+.constitution li {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.constitution ol.const-littlelist {
+  padding: 6px 0 6px 20px;
+}
+
+.constitution .const-littlelist li {
+  margin: 0;
+}
+
+body strong {
+  color: #333;
+}
+
+.widget_gce_widget ul li a {
+  color: #8b0000;
+}
+
+#content ul a, #content ol a {
+  color: #8b0000;
+}
+
+.gallery {
+  margin-bottom: 30px !important;
+}
+
+.wp-caption-text {
+  font-style: italic;
+}
+
+#usp-submit {
+  margin-top: 35px;
+  text-align: center;
+}
+
+#usp_form label {
+  display: none;
+}
+
+aside.widget_advanced_menu div li ul {
+  display: none;
+}
+
+aside.widget_advanced_menu div li.current-menu-item ul,
+aside.widget_advanced_menu div li.current-menu-parent ul,
+aside.widget_advanced_menu div li.current-menu-ancestor ul {
+  display: block;
+}
+
+aside.widget_advanced_menu div li.current-menu-item>a,
+aside.widget_advanced_menu div li.current-menu-parent>a,
+aside.widget_advanced_menu div li.current-menu-ancestor>a {
+  color: #002147;
+}
+
+aside.widget_advanced_menu div li.current-menu-item>a:hover,
+aside.widget_advanced_menu div li.current-menu-parent>a:hover,
+aside.widget_advanced_menu div li.current-menu-ancestor>a:hover {
+  color: #8b0000;
+}
+
+.page-title-wrap {
+  display: none;
+}
+
+div.notfound {
+  background: url(klaxon.jpg) no-repeat left top;
+  min-height: 463px;
+  padding: 150px 0px 0px 200px;
+}
+
+#toc_container ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+table.wcbc-paytable
+{
+  width: 75%;
+  min-width: 280px;
+  margin: 0 auto 1.625em;
+  border: none;
+}
+
+table.wcbc-paytable td {
+  border: none;
+  padding: 2px 10px 2px 0;
+}
+
+table.wcbc-paytable select {
+  padding: 4px !important;
+  height: auto !important;
+}
+
+table.wcbc-paytable .moneyresult {
+  text-align: right;
+}
+
+table.wcbc-paytable #result-tot {
+  font-weight: bold;
+}
+
+
+.wcbc-homebar
+{
+  background: #072140;
+  margin-bottom: 10px;
+  padding: 3px 16px;
+  min-width: 268px;
+}
+
+.wcbc-homebar>div
+{
+  float:left;
+  height: 32px;
+  line-height: 32px;
+  margin: 0px 1.5%;
+  color: #ccc;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.wcbc-homebar .wcbc-homecal-title
+{
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.wcbc-homebar .wcbc-homecal-title,.wcbc-homecal-date,.wcbc-homecal-extra
+{
+  color: #e2e2e2 !important;
+}
+
+.wcbc-homebar .gce-list-title
+{
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .wcbc-homecal-extra {
+    display: none;
+  }
+}
+
+.wcbc-homebar img
+{
+  height: 100%;
+  width: auto;
+}
+
+.featured-slider, .featured-slider .slider-cycle {
+  margin-bottom: 0;
+}
+
+.featured-text {
+  left: 30px;
+  right: auto;
+  text-align: left;
+}
+
+.featured-text .featured-title {
+  float: left;
+}
+
+.featured-text .featured-content {
+  float: left;
+  clear: left;
+}
+
+.entry-meta {
+  color: rgba(255,255,255,0);
+}
+
+.entry-meta span.by-author {
+  display: none;
+}
+
+#secondary>aside>div, #secondary>aside>ul, #secondary>aside>ol {
+  border-left: #ccc solid 1px;
+  padding-left: 10px;
+  margin-left: 3px;
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget-title {
+  font-size: 22px;
+  line-height: 28px;
+  padding-bottom: 8px;
+}
+
+.gce-event {
+  margin-bottom: 8px;
+}
+
+.gce-event-title span {
+  color: #555 !important;
+  font-size: 110%;
+}
+
+.gce-event-details {
+  margin-left: 8px;
+  margin-bottom: 6px;
+  display: none;
+}
+
+#access a {
+  padding: 6px 0 0;
+  height: 26px;
+}
+
+#access ul li ul {
+  top: 32px;
+}
+
+#main {
+  padding: 20px 0px 10px;
+}
+
+.hgroup-right {
+  display: none;
+}
+
+div.hgroup-wrap {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: none;
+}
+
+#site-logo {
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+blockquote {
+  padding: 5px 20px;
+}
+
+div.listing-item {
+  min-height: 75px;
+  margin-bottom: 10px;
+}
+
+div.display-posts-listing {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.listing-item img {
+  float: left;
+  height: 75px;
+  width: 75px;
+  margin-right: 20px;
+}
+
+table.committee-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table.committee-table img {
+  width: 100%;
+  max-width: 75px;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+div.wcbc-flag, div.wcbc-weather, div.wcbc-suntimes {
+  margin: 0px 3px;
+  float: left;
+  text-align: center;
+  vertical-align:middle;
+}
+
+div.wcbc-flag
+{
+  width: 75px;
+}
+
+div.wcbc-weather
+{
+  width: 54px;
+}
+
+div.wcbc-suntimes {
+  width: 120px;
+  padding: 5px 0 0 0;
+}
+
+div.wcbc-flag img {
+  width: 64px;
+  border: none;
+  padding: 0px;
+  background: none;
+}
+
+div.wcbc-weather img {
+  width: 48px;
+  border: none;
+  padding: 0px;
+  background: none;
+}
+
+div.wcbc-flag a,
+div.wcbc-flag a:link,
+div.wcbc-flag a:visited,
+div.wcbc-flag a:hover {
+  border-bottom:none;
+}
+
+div.wcbc-flag div, div.wcbc-weather div {
+  width: 100%;
+  text-align: center;
+}
+
+div.wcbc-flag div {
+  margin-top: -7px;
+}
+
+aside ul.sub-menu {
+  margin-left: 8px;
+}
+
+td.bumpchart {
+  width:50%;
+  text-align:center;
+  vertical-align:bottom; 
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+}
+
+td.crewnum {
+  text-align: center;
+}
